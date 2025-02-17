@@ -11,12 +11,14 @@ public class backgroundChange : MonoBehaviour
     public int currentScene = 1;
     public GameObject Castle;
     public GameObject Outside;
+    public GameObject Ground;
 
 
     void Start()
     {
         Castle.SetActive(false);
         Outside.SetActive(false);
+        Ground.SetActive(false);
     }
 
     void Update()
@@ -25,11 +27,13 @@ public class backgroundChange : MonoBehaviour
         {
             Outside.SetActive(true);
             Castle.SetActive(false);
+            Ground.SetActive(false);
         }
         else if (currentScene < 0)
         {
             Castle.SetActive(true);
             Outside.SetActive(false);
+            Ground.SetActive(true);
         }
     }
 
