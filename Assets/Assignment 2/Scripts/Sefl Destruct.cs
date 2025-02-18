@@ -9,6 +9,7 @@ public class SeflDestruct : MonoBehaviour
     void Start()
     {
         Destroy(gameObject, 3);
+        //Destroy the summoned prefab (arrow) 32 seconds after spawning 
     }
 
     // Update is called once per frame

@@ -24,6 +24,7 @@ public class scaleWithSliderTarget : MonoBehaviour
         scaleValue = scaleTarget.value;
         Vector3 size = new Vector3(scaleValue, scaleValue, scaleValue);           
         target.transform.localScale = size;
+        //Update scale slider
         
     }
 }
